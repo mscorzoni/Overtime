@@ -17,4 +17,4 @@ Key requirement: company needs documentation that salaried employees did or did 
 
 ## UI:
 
-Bootstrap -> formatting 
+ - Bootstrap -> formatting 
