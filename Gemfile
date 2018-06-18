@@ -18,6 +18,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'jquery-rails'
 gem 'devise'
+gem 'gritter', '~> 1.2'
 
 
 group :development, :test do
