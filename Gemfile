@@ -19,12 +19,14 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'jquery-rails'
 gem 'devise'
 
+
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'capybara', '~> 2.13'
   gem 'rspec-rails'
   gem 'database_cleaner'
   gem 'selenium-webdriver'
+  gem 'factory_girl_rails', '~> 4.9'
 end
 
 group :development do
