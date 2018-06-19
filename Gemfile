@@ -19,6 +19,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'jquery-rails'
 gem 'devise'
 gem 'gritter', '~> 1.2'
+gem 'administrate', '~> 0.10.0'
+gem 'bourbon', '~> 5.0', '>= 5.0.1'
+
 
 
 group :development, :test do
