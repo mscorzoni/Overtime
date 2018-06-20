@@ -3,7 +3,7 @@ class PostsController < ApplicationController
   
 
   def index
-    @posts = Post.all
+    @posts = current_user.posts
   end
   def new
     @post = Post.new
@@ -28,7 +28,7 @@ class PostsController < ApplicationController
 
   def update
     authorize @post
-    
+
     if @post.update(post_params)
       redirect_to @post, notice: 'Your post was successfully edited'
     else
