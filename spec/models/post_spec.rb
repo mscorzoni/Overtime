@@ -8,7 +8,7 @@ RSpec.describe Post, type: :model do
                           password_confirmation: "111111",
                           first_name: "Jon",
                           last_name: "Snow",
-                          phone: '555555555')
+                          phone: '5555555555')
       login_as(@user, :scope => :user)
       @post = FactoryGirl.create(:post)
     end

@@ -40,7 +40,7 @@ describe 'navigate' do
                                email: 'nonauth@example.com',
                                password: '111111',
                                password_confirmation: '111111',
-                               phone: '555555555')
+                               phone: '5555555555')
 
       post_from_other_user = Post.create(date: Date.today, rationale: 'This post should not be seen', user_id: other_user.id)
 
