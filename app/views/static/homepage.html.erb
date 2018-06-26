@@ -1,11 +1,5 @@
-<div class="jumbotron">
-  <h2>
-    Overtime application
-  </h2>
-  <p>
-    This is a content
-  </p>
-  <p>
-    <a href="#" class="btn btn-primary btn-large">Learn More</a>
-  </p>
-</div>
+<% if admin_types.include?(current_user.try(:type)) %>
+  <%= render 'admin'  %>
+<% else %>
+  <%= render 'employee'  %>
+<% end %>
