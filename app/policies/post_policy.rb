@@ -4,6 +4,10 @@ class PostPolicy < ApplicationPolicy
     user_or_admin && !post_approved?
   end
 
+  def approve?
+    admin?
+  end
+
   private
   def admin?
     admin_types.include?(user.type)
