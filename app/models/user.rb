@@ -5,6 +5,8 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable
   has_many :posts
   has_many :audit_logs
+  has_many :hands_associations, class_name: 'Hand'
+  has_many :hands, through: :hands_associations
   validates :first_name, presence: true
   validates :last_name, presence: true
   validates :phone, presence: true, length: { is: 10 }
