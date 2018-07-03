@@ -47,6 +47,17 @@ RSpec.describe User, type: :model do
     end
   end
 
+  it 'requires the ssn to only contain integers' do
+      @user.ssn = 'mygreatstr'
+      expect(@user).to_not be_valid
+    end
+
+  it 'requires the ssn to only 4 chars' do
+    @user.ssn = '12345'
+    expect(@user).to_not be_valid
+  end
+
+
   describe "custom name methods" do
     it 'has a full method that combines first and last name' do
       expect(@user.full_name).to eq("SNOW, JON")

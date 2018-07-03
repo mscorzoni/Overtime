@@ -10,7 +10,8 @@ class User < ApplicationRecord
   validates :first_name, presence: true
   validates :last_name, presence: true
   validates :phone, presence: true, length: { is: 10 }
-  validates :ssn, presence: true
+  validates :ssn, presence: true, length: { is: 4}
+  validates_numericality_of :ssn
   validates :company, presence: true
 
   PHONE_REGEX = /\A[0-9]*\Z/
